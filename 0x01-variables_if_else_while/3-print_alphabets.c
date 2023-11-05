@@ -1,8 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - A program that prints the alphabet in lowercase and in uppercase
- * Return : it should return  0
+ * main - This  program prints the alphabet in lowercase and then in uppercase
+ *
+ * Return: it should return  0
  */
 
 int main(void)
@@ -15,13 +16,11 @@ while (lowercase <= 'z')
 putchar(lowercase);
 lowercase++;
 }
-
 while (uppercase <= 'Z')
 {
 putchar(uppercase);
 uppercase++;
 }
-
 putchar('\n');
-return(0);
+return (0);
 }
