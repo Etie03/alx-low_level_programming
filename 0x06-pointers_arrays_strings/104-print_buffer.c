@@ -47,6 +47,7 @@ printf("%c", c);
 printf("\n");
 o += 10;
 }
+return (0);
 }
 
 
