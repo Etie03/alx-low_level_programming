@@ -8,21 +8,18 @@
 int main(void)
 {
 int i;
+int j;
+int k;
 
-for (i = 12; i <= 789; i++)
+for (i = 0; i <= 7; i++)
 {
-int m = i / 100;
-int n = (i / 10) % 10;
-int p = i % 10;
-
-if (m != n && m != p && n != p)
+for (j = i + 1; j <= 8; j++)
 {
-putchar('0' + m);
-putchar('0' + n);
-putchar('0' + p);
-
-if (i != 789)
+for (k = j + 1; k <= 9; k++)
 {
+putchar('0' + i);
+putchar('0' + j);
+putchar('0' + k);
 putchar(',');
 putchar(' ');
 }
