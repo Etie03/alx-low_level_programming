@@ -10,9 +10,8 @@
 void print_diagonal(int n)
 {
 
-int line = x;
-int space = y;
-x = 0;
+int x = 0;
+int y;
 
 if (n > 0)
 {
