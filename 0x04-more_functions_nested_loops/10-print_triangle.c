@@ -9,28 +9,29 @@
 
 void print_triangle(int size)
 {
-	int m = 0;
+	int m;
 	int p;
 	int q;
 
-	if (m > 0)
+	if (size <= 0)
 	{
-		while (m < size)
-		{
-			for (p = size - 1; p > m; p--)
-			{
-				_putchar(' ');
-			}
-			for (q = 0; q < m + 1; q++)
-			{
-				_putchar('#');
-			}
-			_putchar('\n');
-			m++;
-		}
+		_putchar('\n');
 	}
 	else
 	{
-		_putchar('\n');
+		for (m = 0; m < size; m++)
+		{
+			for (p = size - m; p > 1; p--)
+			{
+				_putchar(32);
+			}
+
+			for (q = 0; q <= m; q++)
+			{
+				_putchar(35);
+			}
+
+			_putchar('\n');
+		}
 	}
 }
