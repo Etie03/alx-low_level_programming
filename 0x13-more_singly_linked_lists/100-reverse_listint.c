@@ -13,7 +13,7 @@ listint_t *next_temp = NULL;
 
 while (*head)
 {
-next = (*head)->next;
+next_temp = (*head)->next_temp;
 (*head)->next_temp = prev_temp;
 prev_temp = *head;
 *head = next_temp;
