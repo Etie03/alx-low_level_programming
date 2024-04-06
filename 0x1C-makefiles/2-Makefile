@@ -4,3 +4,6 @@ OBJ = $(patsubst %.c,%.o,$(SRC)
 NAME = school
 all : $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
+
+%.o: %.c m.h
+	${CC} -c -o $@ $<
